@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check Passowrds</h1>
+   
+</body>
+ <script>
+        const passwords = ["password123", "qwerty", "letmein", "123456", "admin_123_admin", "welcome"];
+        function validatePassword(passwords) {
+        const regex = /^[a-zA-Z0-9]{8, 20}$/;
+        for (let i = 0; i < passwords.length; i++) {
+            if (regex.test(passwords[i])){
+                console.log(`${passwords[i]} is valid`);
+            } else {
+                console.log(`${passwords} is invalid`);
+            }
+        }
+        }
+
+    </script>
+</html>

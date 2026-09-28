@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    const orders = [
+        { item: "laptop", quantity: 10, price: 150000 },
+        { item: "mouse", quantity: 50, price: 1200 },
+        { item: "keyboard", quantity: 30, price: 2500 }
+    ]
+    function generateReceipt(orders) {
+        let total = 0;
+        console.log("Order Receit:...");
+        for (let i= 0; i < orders.length; i++) {
+            const itemTotal = orders[i].quantity * orders[i].price;
+            total += itemTotal;
+            console.log(`${orders[i].item} - Quantity: ${orders[i].quantity}, Price: ${orders[i].price}, Total: ${itemTotal}`);
+        }
+        console.log(`Total Sales: ${total}`);
+
+    }
+generateReceipt(orders);
+   </script>
+</head>
+<body>
+    <h1>Order Receipt</h1>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const price = [
+{item: "laptop", quantity: 10, price: 150000},
+{item: "mouse", quantity: 50, price: 1200},
+{item: "keyboard", quantity: 30, price: 2500}
+]
+  
+function calculateTotalSales() {
+    let total = 0;
+   for (let i = 0; i < price.length; i++) {
+    total += price[i].quantity * price[i].price;
+    
+   }
+   return total;
+
+}
+console.log("Total Sales: " + calculateTotalSales());      
+    </script>
+</body>
+</html>
